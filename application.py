@@ -10,6 +10,12 @@ application=Flask(__name__)
 app=application
 
 ## Route for a home page
+# application.py
+
+@application.route("/")
+def hello():
+    return "Hello from Elastic Beanstalk!"
+
 
 @app.route('/')
 def index():
